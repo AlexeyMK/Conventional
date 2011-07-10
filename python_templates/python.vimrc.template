@@ -1,0 +1,5 @@
+{% if indentation_style == "spaces" %}
+	SPACES {{ num_spaces }}
+{% elif indentation_style == "tabs" %}
+	TABS 
+{% endif %}
