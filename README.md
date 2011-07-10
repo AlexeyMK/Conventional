@@ -1,5 +1,5 @@
 What this does:
-===============
+---------------
 
 - makes creating coding conventions for your project suck less
 - How it works:
@@ -12,17 +12,17 @@ What this does:
   3.  coding conventions don't suck as much anymore.
 
 Example:
-========
+--------
 
 python conventional.py your_project.yaml
 
 Current State:
-==============
+--------------
 
 - Super f-ing rough. 0.01
 
 Dependencies:
-=============
+-------------
 
 - jinja2
 - yaml
