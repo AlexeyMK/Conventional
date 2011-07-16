@@ -13,16 +13,22 @@ What this does:
 
 Example:
 --------
-
-python conventional.py your_project.yaml
+> python config.py 
+then:
+> python conventional.py user_config.json
+the contents of /your_project should include the relevant stuff
 
 Current State:
 --------------
 
-- Super f-ing rough. 0.01
 
 Dependencies:
 -------------
-
 - jinja2
-- yaml
+- json
+
+Todo:
+-----
+- pre-commit hooks
+- coding conventions doc
+- rewrite quick explanation of what everything is
