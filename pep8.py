@@ -102,7 +102,7 @@ import time
 import inspect
 import keyword
 import tokenize
-import Conventional
+import conventional
 from optparse import OptionParser
 from fnmatch import fnmatch
 try:
@@ -113,8 +113,8 @@ except NameError:
 
 DEFAULT_EXCLUDE = '.svn,CVS,.bzr,.hg,.git'
 DEFAULT_IGNORE = 'E24'
-MAX_LINE_LENGTH = Conventional.get_rule("CodeIndentation/LineWidth") or 79
-INDENT_LEVEL = Conventional.get_rule("CodeIndentation/NumIndent") or 79
+MAX_LINE_LENGTH = int(conventional.get_rule("python/CodeIndentation/LineWidth")) or 79
+INDENT_LEVEL = int(conventional.get_rule("python/CodeIndentation/NumSpaces")) or 4
 
 INDENT_REGEX = re.compile(r'([ \t]*)')
 RAISE_COMMA_REGEX = re.compile(r'raise\s+\w+\s*(,)')
@@ -127,7 +127,7 @@ EXTRANEOUS_WHITESPACE_REGEX = re.compile(r'[[({] | []}),;:]')
 WHITESPACE_AROUND_NAMED_PARAMETER_REGEX = \
     re.compile(r'[()]|\s=[^=]|[^=!<>]=\s')
 
-WHITESPACE = ' \t' #TODO Here: Conventional on which one is allowed
+WHITESPACE = ' \t' #TODO Here: conventional on which one is allowed
 
 BINARY_OPERATORS = frozenset(['**=', '*=', '+=', '-=', '!=', '<>',
     '%=', '^=', '&=', '|=', '==', '/=', '//=', '<=', '>=', '<<=', '>>=',

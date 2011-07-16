@@ -9,6 +9,13 @@
 			]
 		},
 		{
+			"id":"CodeIndentation/NumSpaces",
+			"question":"How many spaces is fair for indentation?",
+			"values":[
+				"2", "4", "6", "8"
+			]
+		},
+		{
 			"id":"CodeIndentation/LineWidth",
 			"question":"How long are the lines?",
 			"values":[
