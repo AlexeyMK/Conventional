@@ -1,0 +1,20 @@
+{
+	"supported_languages": ["python"],
+	"conventions": [
+		{
+			"id":"CodeIndentation/UseSpaces",
+			"question":"Would you like to use spaces for indentation, instead of tabs?",
+			"values":[
+				"True", "False"
+			]
+		},
+		{
+			"id":"CodeIndentation/LineWidth",
+			"question":"How long are the lines?",
+			"values":[
+				"79", "80", "90", "100"
+			]
+		}
+	]
+}
+
