@@ -1,0 +1,8 @@
+project_name: new_example
+
+indentation:
+    style: spaces
+    tab_size: 4
+
+line_width:
+    num_chars: 80
